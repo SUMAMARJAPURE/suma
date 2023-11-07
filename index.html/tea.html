@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> coffee</title>
+    <link rel="stylesheet" href="tea.css">
+</head>
+<body>
+   
+    <div class="image-container">
+        <img src="C:\Users\sumag\OneDrive\Desktop\sumii.html\TEA.jpg">
+        <div class="overlay-text">   
+          <style>
+            body {
+              font-family: Arial, sans-serif;
+            }
+            .container {
+              text-align:center;
+              margin-top: 20px;
+            }
+          </style>
+        </head>
+        <body>
+          <h2> Coffee And Tea Counter</h2>
+          <div class="container">
+            <label>
+              <input type="radio" name="drink" value="tea"> Tea
+            </label>
+            <label>
+              <input type="radio" name="drink" value="coffee"> Coffee
+            </label>
+            <input type="radio" name="drink" value="Badam milk"> Badam milk
+        </label>
+            <input type="radio" name="drink" value="horlics"> horlics
+            <br>
+            <br>
+            <button onclick="countDrink()">Add Drink</button>
+            <button onclick="countDrink()">Total Bill</button>
+            <p>Tea Count: <span id="teaCount">0</span></p>
+            <p>Coffee Count: <span id="coffeeCount">0</span></p>
+            <p>Badam milk Count: <span id="Badam milkCount">0</span></p>
+            <p>Horlicks Count: <span id="HorlicksCount">0</span></p>
+          </div>
+         <script>
+            let CoffeeCount=0;
+            let TeaCount = 0;
+            let Badam milkCount = 0;
+            let Horlicscount = 0;
+            function countDrink() {
+              const selectedDrink = document.querySelector('input[name="drink"]:checked');
+              if (selectedDrink) {
+                const drinkType = selectedDrink.value;
+                if (drinkType === 'tea') {
+                  teaCount++;
+                  document.getElementById('teaCount').textContent = teaCount;
+                } else if (drinkType === 'tea') {
+                  coffeeCount++;
+                  document.getElementById('coffeeCount').textContent = coffeeCount;
+                  else if (drinktype =='coffee') {
+                    document.getElementById('badam milkCount').textContent = teaCount;
+                } else if (drinkType === 'badam milk') 
+                Badamcount++;
+                document.getElementById('horlicsCount').textContent =  horlicksCount;
+                
+                }
+              }
+            }
+            function priceDrink(){var bill;
+              bill=teaCount*10+coffeeCount*20+Badammilkcount*30+horlicksCount*40;
+              document.getElementById('bill').textContent =  bill;
+              return(bill);
+                
+
+          </script>
+        </body>
+        </html>
+    </div>
+
+    <script src="C:\Users\sumag\OneDrive\Desktop\sumii.html\TEA.jpg"></script>
+</body>
+</html>
+          
